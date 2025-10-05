@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --inter:"Inter", sans-serif;
+
+}
+
+body{
+   
+  background: linear-gradient(45deg,  #6eeeff, #f0f878 );
+  background-attachment: fixed;
+  min-height: 100vh;           
+  margin: 0;
+  font-family: var(--inter);             
+
+}
+
+.blur {
+  
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 250, 250, 0.493); 
+  backdrop-filter: blur( 1px);
+  border: none;
+  border-radius: 10px; 
+}
+
+
+.container {
+
+  width: 100%;
+  max-width: 400px; 
+  height: 500px;
+  margin: 50px auto;
+ background-image: url("../images/Franchisee.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+  border-radius: 9px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-information {
+    background: transparent;
+    padding: 30px;
+    width: 400px;
+    max-width: 340px; 
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+
+.form-group {
+    margin-bottom: 40px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+    padding-left:  10px;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #16e3f2;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-size: 16px;
+    transition: border-color 0.9s;
+}
+
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius:  1000px;
+    box-sizing: border-box; 
+    font-size: 16px;
+    transition:  1s;
+}
+
+
+input:focus {
+    border-color: #000000;
+    outline: none;
+    
+}
+
+button {
+    width: 90%;
+    padding: 15px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #09ffda;
+    color: #000000;
+    border-radius:  1000px;
+    transition:  1s;
+}
+
+.button a{
+    text-decoration: none;
+    color: aliceblue;
+}

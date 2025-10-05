@@ -1,0 +1,952 @@
+/* All Common Css Start */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--black);
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.section_heading{
+    padding-bottom: 40px;
+    min-width: 820px;
+    margin: 0 auto;
+}
+.section_heading h2{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--inter);
+    text-align: center;
+    color: var(--white);
+    padding-bottom: 10px;
+}
+.section_heading p{
+    font-size: 20px;
+    font-weight: 399;
+    font-family: var(--inter);
+    text-align: center;
+    color: var(--white);
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+button{
+    border: none;
+    background: transparent;
+}
+
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --white-ee: #EEEEEE;
+    --gray-19: #191919;
+    --inter: "Inter", sans-serif;
+    --ki-color:#1a1a1a;
+}
+
+ul li{
+    list-style: none;
+}
+/* All Common Css END */
+
+
+/*    Nav Start   */
+
+nav{
+    padding: 15px 0;
+    background: black;
+}
+.main_menu{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+
+}
+.main_menu .logo{
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main_menu .logo img{
+    height: 100%;
+}
+
+.main_menu .menu ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.main_menu .menu ul li a{
+    color: var(--white);
+    font-family: var(--inter);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 18px;
+}
+
+.main_menu .menu ul li a:hover{
+     background: linear-gradient(45deg,#2575fc, #51f9f9);
+    transform: scale(1.9);
+    transition: 0.9s;
+    border-radius: 30px;
+    
+}
+
+.main_menu .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 30px;
+}
+.main_menu .buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 34px;
+    width: 34px;
+
+}
+
+.main_menu .buttons button svg:hover{
+    background: linear-gradient(45deg,#2575fc, #51f9f9);
+    transform: scale(1.5);
+    transition: 0.9s;
+    border-radius: 30px;
+}
+
+
+
+#banner{
+   
+     background-image: url('https://images.pexels.com/photos/33991079/pexels-photo-33991079.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+      
+}
+
+#banner .overlay{
+    padding-top: 72px;
+    padding-bottom: 246px;
+    background: linear-gradient(270deg ,rgba(0,0,0,0.8)0%, rgba(0,0,0,0.6)39.51%,rgba(0,0,0,0.0)60.42%,rgba(0,0,0,0.0)100%);
+    transform: matrix(-1,0,0,1,0,0);
+}
+
+#banner .overlay .container{
+    transform: matrix(-1,0,0,1,0,0);
+}
+
+
+.banner_info{
+    max-width: 652px;
+
+}
+
+.banner_info h1{
+    font-size: 66px;
+    line-height: 1.5;
+    font-weight: 900;
+    color: var(--white);
+    font-family: var(--inter);
+}
+.banner_info h1 span{
+    display: block;
+}
+.banner_info p{
+    font-family: var(--inter);
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--white-ee);
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-right: 87px;
+}
+.banner_info a{
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--black);
+    background: var(--white);
+    padding: 20px 50px;
+    border-radius: 40px;
+    font-family: var(--inter);
+}
+
+.banner_info a:hover{
+    background: linear-gradient(45deg,#2575fc, #51f9f9);
+  
+
+    
+}
+
+/*    Section   END   */
+
+
+/* Section Chef Css Start */
+
+
+
+
+.section_heading{
+       padding-top: 170px;
+
+}
+
+.section_heading p{
+    padding-top: 10px;
+}
+
+.section_heading p span{
+    display: block;
+}
+
+
+.chef_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding-top: 10px;
+}
+
+.chef_container .food_info p{
+    font-size: 20px;
+    font-weight: 399;
+    font-family: var(--inter);
+    text-align: left;
+    color: var(--white);
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+.chef_container .food_info p a{
+
+    font-weight: 700;
+
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container  span{
+
+    height: 100px;
+    width: 100px;
+    background: var(--white);
+    border-radius: 50%;
+    padding-top: 15px;
+    padding-right: 5px;
+
+}
+
+
+
+.image-container img {
+  display: inline;
+  width: 100%;
+  height: 100%;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px; 
+  color: rgb(0, 0, 0); 
+  cursor: pointer;
+
+  z-index: 10;
+ padding-left: 30px;
+ padding-bottom: 30px;
+}
+
+
+/* Section Chef Css END */
+
+
+
+/* food_menu Css Start  */
+
+.food_menu{
+    height: auto;
+}
+
+.food_menu_container{
+  max-width: 1170px;
+    margin: 0 auto;
+}
+.food_menu_container h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    padding-top:  150px;
+    color: var(--white);
+    font-family: var(--inter);
+}
+
+.food_menu_container .main_menu_item{
+    height: auto;
+}
+
+.food_menu_container .main_menu_item ul{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.food_menu_container .main_menu_item ul li a{
+    font-size: 18px;
+    font-family: var(--inter);
+    color: var(--white);
+}
+
+
+.food_menu_container .main_menu_item ul li a:hover{
+     background: linear-gradient(45deg,#2575fc, #51f9f9);
+    transform: scale(1.9);
+    transition: 0.9s;
+    border-radius: 30px;
+}
+
+.food_main_menu{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    height: auto;
+    width: 1170px;
+    gap: 30px;
+    background: var(--ki-color);
+    margin-top: 80px;
+     border: 5px solid var(--white);
+     border-radius: 20px;
+    
+}
+
+.food_main_menu .food_main_menu{
+    background: var(--ki-color);
+    box-shadow: 30px #EEEEEE;
+    border: 5px solid var(--white);
+
+
+}
+.food_main_menu .food_main_menu2 img{
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+
+.food_main_menu .food_main_menu2 h3 {
+    font-family: var(--inter);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white);
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.food_main_menu .food_main_menu2 p{
+     font-family: var(--inter);
+    font-size: 16px;
+    color: var(--white);
+    padding-bottom: 10px;
+    padding-left: 20px;
+    line-height: 26px;
+
+}
+.food_main_menu .food_main_menu2 h4{
+
+     font-family: var(--inter);
+    font-size: 24px;
+    color: var(--white);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-top: 15px;
+    display: inline;
+
+}
+.food_main_menu .food_main_menu2 button{
+ margin-left: 200px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ bottom: 0;
+ right: 0;
+ height: 40px;
+ width: 40px;
+ display: inline-block;
+ cursor: pointer;
+}
+
+
+
+.food_main_menu .See_All a{
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--black);
+    padding: 20px 50px;
+    background: var(--white);
+}
+
+
+/* food_menu Css END */
+
+
+/*  Rstaurent Info Start */
+
+  #Restaurent_Info .container{
+    margin-top: 80px;
+
+  }
+    #Restaurent_Info .container a{
+        padding: 20px 50px;
+        background: var(--white);
+        color: var(--black);
+        margin-left: 500px;
+        font-family: var(--inter);
+        font-weight: 700;
+        border-radius: 1000px;
+      
+    }
+
+     #Restaurent_Info .container a:hover{
+         background: linear-gradient(45deg,#2575fc, #51f9f9);
+     }
+
+
+
+    #Restaurent_Info .container .speciality{
+        padding-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 30px;
+    }
+
+        #Restaurent_Info .container .speciality .item{
+            text-align: center;
+            
+        }
+#Restaurent_Info .container .speciality .item h4{
+    font-weight: 700;
+    padding-bottom: 9px;
+    font-size: 30px;
+    color: var(--white);
+}
+
+#Restaurent_Info .container .speciality .item p{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+    font-family: var(--inter);
+}
+
+#Restaurent_Info .container .speciality h1{
+    color: var(--white);
+    line-height: 70;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#Restaurent_Info .container  h1 span{
+    display: block;
+}
+
+/*  Rstaurent Info END */
+
+
+/*  Client  Info Start*/
+
+#Client_Info .container{
+    margin: 0 auto;
+  
+}
+#Client_Info .container h1{
+    color: var(--white);
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 150px;
+}
+#Client_Info .container h1 span{
+    display: block;
+}
+#Client_Info .container p{
+      color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    
+}
+#Client_Info .container a{
+       padding: 20px 50px;
+        background: var(--white);
+        color: var(--black);
+        margin-left: 500px;
+        font-family: var(--inter);
+        font-weight: 700;
+        border-radius: 1000px;
+        text-align: center;
+     
+}
+
+#Client_Info .container a:hover{
+     background: linear-gradient(45deg,#2575fc, #51f9f9);
+     transition: 0.9s;
+}
+
+
+
+
+
+/*  Client  Info END*/
+
+
+/*  Client  Openion  Start*/
+
+
+#client_openion .client_review h1{
+    color: var(--white);
+    font-size: 50px;
+    font-weight: 600;
+    font-family: var(--inter);
+    padding-top: 150px;
+    text-align: center;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 150px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    background-color: var(--gray-19);
+    border: 1px solid #272424;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+}
+
+
+.card-content-top {
+    display: flex;
+    align-items: flex-start; 
+    gap: 15px;
+}
+
+
+.main-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+.text-content h5 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: var(--white);
+    font-family: var(--inter);
+}
+
+.text-content p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--white);
+    line-height: 28px;
+    line-height: 28px;
+    font-family: var(--inter);
+}
+
+
+.small-icon {
+    width: 50px;
+    height: 50px;
+    align-self: flex-start;
+    
+}
+
+
+.bottom-text {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #fffbfb;
+}
+
+
+/*  Client  Openion  END*/
+
+
+
+
+/* Subscribe Start  */
+
+#subscribe{
+    background-color: var(--white);
+}
+.container .subscribe_box{
+    background: var(--white);
+
+}
+
+.container .subscribe_box h2{
+    color: var(--white);
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--inter);
+    line-height: 90px;
+    align-items: center;
+    padding-bottom: 50px;
+    color: var(--black);
+    text-align: center;
+    padding-top: 30px;
+}
+
+.subscribe_box form{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    max-width: 748px;
+    padding-bottom: 103px;
+    padding-left:  180px;
+    text-align: center;
+}
+
+.container .subscribe_box form input{
+    border: 1px solid var(--black);
+    border-radius: 1000px;
+    padding: 20px 50px;
+    margin: 0 auto;
+    color: var(--black);
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.container .subscribe_box form input::placeholder{
+    color: var(--black);
+    
+}
+
+
+.container .subscribe_box form button{
+    padding: 20px 54px;
+    color: var(--black);
+    border: none;
+    border-radius: 1000px;
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 18px;
+   
+
+}
+
+
+.container .subscribe_box form button:hover{
+    background: linear-gradient(45deg,#2575fc, #51f9f9);
+    transform: scale(1.2);
+    transition: 0.9s;
+    border-radius: 25px;
+}
+
+
+/* Subscribe END  */
+
+
+
+ /* Map  Start */
+
+ #map{
+    padding: 150px 0;
+
+ }
+
+.map_box {
+    display: grid;
+    grid-template-columns: 1fr 473px;
+    gap: 145px;
+    align-items: center;
+    padding: 0 60px;
+    
+
+}
+
+
+.map_box .map_info h2{
+    color: var(--white);
+    font-family: var(--inter);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+    padding-bottom: 30px;
+    
+}
+.map_box .map_info h2 span{
+    display: block;
+}
+.map_box .map_info p{
+     color: var(--white);
+    font-family: var(--inter);
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 70px;
+}
+.map_box .map_info button{
+    padding: 20px 54px;
+    color: var(--black);
+    border: none;
+    border-radius: 1000px;
+    background: var(--white);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--inter);
+
+}
+
+.map_box .map_info button a{
+    color: var(--black);
+}
+
+
+.map_box .map_info button:hover{
+    background: linear-gradient(45deg,#2575fc, #51f9f9);
+    transform: scale(1.2);
+    transition: 0.9s;
+    border-radius: 25px;
+}
+
+
+
+
+  /* Map  END */
+
+
+
+
+/* Footer Start  */
+
+
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 50px;
+    
+}
+
+.legal_information{
+    display: flex;
+    gap: 103px;
+   
+}
+
+
+
+.legal_information .our_products h4{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--inter);
+    line-height: 24px;
+    color: var(--white);
+    padding:10px 0;
+}
+.legal_information .our_products ul{
+    
+}
+
+.legal_information .our_products ul li{
+     padding:10px 0;
+}
+
+.legal_information .our_products ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--inter);
+    line-height: 18px;
+    color: var(--white);
+}
+
+.legal_information .legal{
+
+}
+.legal_information .legal h4{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--inter);
+    line-height: 24px;
+    color: var(--white);
+    padding:10px 0;
+}
+
+.legal_information .legal ul li{
+    padding:10px 0;
+}
+.legal_information .legal ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--inter);
+    line-height: 18px;
+    color: var(--white);
+}
+
+
+.legal_information .contact h4 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--inter);
+    line-height: 24px;
+    color: var(--white);
+    padding:10px 0;
+}
+
+.legal_information .contact ul li{
+    padding:10px 0;
+}
+.legal_information .contact ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--inter);
+    line-height: 18px;
+    color: var(--white);
+}
+
+
+
+.legal_information .payment h4{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--inter);
+    line-height: 24px;
+    color: var(--white);
+    padding:10px 0;
+
+}
+.legal_information .payment ul {
+    display: flex;
+    justify-content: space-between;
+    gap:  20px;
+}
+.legal_information .payment ul li{
+    padding:10px 0;
+     list-style: none;
+    text-decoration: none;
+   
+}
+.legal_information .payment ul li a{
+   
+    list-style: none;
+    text-decoration: none;
+
+
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; 
+    padding-top: 50px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px; 
+}
+
+
+.social-links a {
+    color: #fff; /
+    font-size: 24px; 
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.social-links a:hover {
+    background-color: #007bff; 
+    transform: scale(1.1); 
+}
+
+.social-links a:hover i {
+    color: #fff;
+}
+
+
+.social-links .fa-facebook-f:hover {
+    background-color: #3b5998;
+}
+
+.social-links .fa-twitter:hover {
+    background-color: #00acee;
+}
+
+.social-links .fa-linkedin-in:hover {
+    background-color: #0e76a8;
+}
+
+.social-links .fa-instagram:hover {
+    background-color: #c13584;
+}
+
+/* Footer END  */
+

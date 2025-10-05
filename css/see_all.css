@@ -1,0 +1,115 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root{
+
+    --white: #ffffff;
+    --black: #000000;
+    --white-ee: #EEEEEE;
+    --gray-19: #191919;
+    --inter: "Inter", sans-serif;
+    --ki-color:#1a1a1a;
+}
+
+
+
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 20px;
+       background: linear-gradient( 90deg,  rgb(108, 252, 252), rgb(0, 0, 0)); 
+    font-family: var(--inrt);
+}
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+
+.product-item {
+    
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--gray-19);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex; 
+    flex-direction: column; 
+}
+
+
+.product-item .product-image {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+.product-item h2 {
+
+    font-family: var(--inter);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white);
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.product-item p {
+   font-family: var(--inter);
+    font-size: 16px;
+    color: var(--white);
+    padding-bottom: 10px;
+    padding-left: 20px;
+    line-height: 26px; 
+}
+
+
+.price-and-cart {
+    
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: auto; 
+    padding-top: 10px;
+}
+
+
+.price-and-cart h2 {
+    font-family: var(--inter);
+    font-size: 24px;
+    color: var(--white);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-top: 15px;
+    display: inline;
+}
+
+
+.cart-icon {
+    width: 35px; 
+    height: 35px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: var(--black); 
+    border-radius: 50%; 
+    transition: transform 0.2s;
+}
+
+.cart-icon:hover {
+    background: linear-gradient(45deg,#2575fc, #51f9f9);
+    transform: scale(1.4);
+    transition: 0.9s;
+    border-radius: 25px;
+}
